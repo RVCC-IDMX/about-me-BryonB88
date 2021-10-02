@@ -1,0 +1,28 @@
+body {
+    font-family: "Playfair Display";
+    font-size: x-large;
+    background-color: #0B8999;
+    color: #E6Af84;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Cinzel Decorative";
+    font-size: 50pt;
+}
+
+header {
+    color: #994200;
+    text-align: center;
+}
+
+#hero {
+    text-align: center;
+}
+
+#heads img {
+    width: 150px;
+}
+
+#bio, footer {
+    text-align: center;
+}
