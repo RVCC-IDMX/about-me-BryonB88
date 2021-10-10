@@ -2,7 +2,7 @@ body {
     font-family: "Playfair Display";
     font-size: x-large;
     background-color: #0B8999;
-    color: #E6Af84;
+    color: #000000;
     font-weight: bold;
 }
 
@@ -10,14 +10,14 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Cinzel Decorative";
     font-size: 40pt;
     color: whitesmoke;
-    
-    
 }
 
 header {
     color: #994200;
     text-align: center;
 }
+
+/* Hero */
 
 #hero {
     text-align: center;
@@ -27,10 +27,15 @@ header {
     width: 150px;
 }
 
+/* Bio */
+
 #bio, footer {
     text-align: center;
     margin-top: 20px;
+    color: whitesmoke;
 }
+
+/* Hobbies */
 
 #hobbies {
     border: 5px solid grey;
@@ -48,9 +53,34 @@ header {
 
 #hobbies ul li {
     color: #000000;
-    list-style-type: circle;
-    
-    
-      
+    list-style-type: circle;  
+}     
+
+/* Gallery */
+
+#gallery img {
+    max-width: 100%;
+}
+
+img {
+    display: block;
+    margin : 0 auto;
+}
+
+#gallery h2 {
+    text-align: center;
+}
+
+#gallery figure {
+    color: black;
+    text-align: center;
+}
+
+#gallery figcaption {
+    background-color: #f3d3e4;
+    width: 640px;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
 }
 
