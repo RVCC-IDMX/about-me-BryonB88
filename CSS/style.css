@@ -136,7 +136,7 @@ header {
 
 /* Large screen size */
 
-@media screen and (min-width: 100em) {
+@media screen and (min-width: 75em) {
 
     #gallery {
         display: grid;
@@ -157,6 +157,7 @@ header {
 
     figcaption {
         margin-right: 1em;
+        align-items: flex-end;
 
     }
 }
