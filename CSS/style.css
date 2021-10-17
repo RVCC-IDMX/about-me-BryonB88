@@ -154,4 +154,9 @@ header {
     figure {
         display: block;
     }
+
+    figcaption {
+        margin-right: 1em;
+
+    }
 }
