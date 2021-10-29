@@ -82,7 +82,29 @@ header {
     text-align: center;
 }
 
+/* video */
 
+.videowrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0px;
+}
+
+.videowrapper iframe {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+#video {
+    text-align: center;
+    margin-bottom: 25px;
+}
 
 /* Literature */
 
@@ -132,6 +154,14 @@ header {
         max-width: 100%;
         columns: 20rem;
     }
+
+    .videowrapper {
+        padding-bottom: 40%;
+    }
+
+    #video {
+        font-size: 25pt;
+    }
 }
 
 /* Large screen size */
@@ -159,5 +189,9 @@ header {
         margin-right: 1em;
         align-items: flex-end;
 
+    }
+
+    .videowrapper {
+        padding-bottom: 40%;
     }
 }
