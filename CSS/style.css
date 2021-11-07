@@ -128,7 +128,7 @@ header {
 
 /* Dropcaps */
 
- #lit div p::first-letter{
+#lit div p::first-letter{
      color:whitesmoke;
      font-size: 75px;
      text-shadow: -5px 5px 10px black;
@@ -194,4 +194,11 @@ header {
     .videowrapper {
         padding-bottom: 40%;
     }
+
+    /* Contact Form */
+
+    #formElements {
+        display: grid;
+}
+    
 }
