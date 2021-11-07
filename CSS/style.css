@@ -134,6 +134,50 @@ header {
      text-shadow: -5px 5px 10px black;
 }
 
+    /* Contact Form */
+
+#formElements {
+    display: grid;
+    row-gap: .5em;
+}
+#contact {
+    padding: 1rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    font-size: 15pt;
+    background-color: #1D1F20;
+}
+
+fieldset{
+    border: 5px solid grey;
+    color: #0B8999;
+}
+
+#contact input, #contact textarea, #contact select,#contact button {
+    padding: 10px;
+    font-size: 12pt;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0px;
+}
+    
+#contact li {
+    margin: 20px;
+}
+
+#contact button {
+    border: 2px solid grey;
+    max-width: 400px;
+    width: 50%;
+    justify-self: center;
+    background: #2B2D2F;
+    color:#0B8999;
+    font-weight: bold;
+}
+fieldset 
+
 /* Tablet Size */
 
 @media screen and (min-width: 60em) {
@@ -199,6 +243,12 @@ header {
 
     #formElements {
         display: grid;
+        row-gap: .5em;
+}
+#contact {
+    padding: 1rem;
+    max-width: 600px;
+    margin: 2rem auto;
 }
     
 }
