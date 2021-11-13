@@ -176,7 +176,6 @@ fieldset{
     color:#0B8999;
     font-weight: bold;
 }
-fieldset 
 
 /* Tablet Size */
 
@@ -232,7 +231,6 @@ fieldset
     figcaption {
         margin-right: 1em;
         align-items: flex-end;
-
     }
 
     .videowrapper {
@@ -245,10 +243,10 @@ fieldset
         display: grid;
         row-gap: .5em;
 }
-#contact {
-    padding: 1rem;
-    max-width: 600px;
-    margin: 2rem auto;
+    #contact {
+        padding: 1rem;
+        max-width: 600px;
+        margin: 2rem auto;
 }
     
 }
