@@ -40,8 +40,8 @@ main {
 }
 
 .logo img {
-    height: 5vw;
-    width: 5vw;
+    height: 7vw;
+    width: 7vw;
 }
 
 .logo h1 {
@@ -63,7 +63,7 @@ main {
 
 .navbar-links a {
     color: whitesmoke;
-    background-attachment: #2B2D2F;
+    background-color: #2B2D2F;
     font-size: 1.3rem;
     padding: .3rem 1.25rem;
     letter-spacing: 2px;
@@ -71,7 +71,11 @@ main {
     display: inline-block;
 }
 
-
+.navbar-links a:hover,
+.navbar-links a:focus {
+    filter: invert(1);
+    border-radius: 5px;
+}
 
 /* 
 media query for non-mobile nav bar
