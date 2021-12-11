@@ -1,7 +1,7 @@
 body {
     font-family: "Playfair Display";
     font-size: x-large;
-    background-color: #0B8999;
+    background-color: white;
     color: #000000;
     font-weight: bold;
 }
@@ -9,7 +9,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: "Cinzel Decorative";
     font-size: 40pt;
-    color: whitesmoke;
+    color: black;
     text-align: center;
 }
 h2 {
@@ -40,7 +40,7 @@ header {
 #bio, footer {
     text-align: center;
     margin-top: 20px;
-    color: whitesmoke;
+    color: black;
 }
 
 /* Hobbies */
@@ -125,8 +125,6 @@ header {
     font-variant: small-caps;
     word-spacing: 5pt;
 }
-
-/* Dropcaps */
 
 #lit div p::first-letter{
      color:whitesmoke;

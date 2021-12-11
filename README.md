@@ -10,9 +10,16 @@ For this final project I will be combining all the different skills I have learn
 
 
 Colors 
-    #F5F5F5 - whitesmoke
-    #0B8999 - teal
-    #000000 - black
-    #1D1F20 - light black
-    #808080 - grey
-    2B2D2F - darker grey
+- #F5F5F5 - <span style="color: #F5F5F5;">Whitesmoke</span>
+- #0B8999 - <span style="color: #0B8999;">**Teal**</span>
+- #000000 - Black
+- #1D1F20 - Light Black
+- #808080 - Grey
+- #2B2D2F - Dark Grey
+
+[My Instagram](https://www.instagram.com/bryon_beaufait/)
+
+
+
+I got insiration for my hover effects from (https://codepen.io/giana)
+with help from (https://www.youtube.com/kepowob)
