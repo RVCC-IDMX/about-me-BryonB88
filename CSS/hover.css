@@ -1,29 +1,29 @@
-#research {
-    font: 300 1em 'Fira Sans', sans-serif;    
+#blog {    
     justify-content: center;
     align-content: center;
     align-items: center;
-    text-align: center;
-    min-height: 100vh;
+    text-align: center; 
+    min-height: 50vh;
     display: flex;
-}
+    margin-top: none;
+} 
 
 button {
-    flex: 1 1 auto;
     background: none;
     border: 2px solid;
     font: inherit;
-    line-height: 1;
+    line-height: .5;
     margin: 10px;
     padding: 1em 2em;
     cursor: pointer;
-  }
+  } 
+
   
   .one {
     color: #9946F0;
     transition-duration: 1s;
   }
-  
+ 
   .one:hover {
     background-color: #FFFF63;
   }
@@ -92,4 +92,15 @@ button {
   .six:hover{
     background-color: #1C26FF;
     transform: scale(1.5);
+  }
+
+  .seven {
+    color: #E65ACA;
+    transition-duration: 1s;
+  }
+
+  .seven:hover {
+    background-color: #98FF7D;
+    transform: skew(25deg) scale(.75);
+    
   }

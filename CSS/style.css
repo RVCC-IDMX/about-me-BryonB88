@@ -3,7 +3,6 @@ body {
     font-size: x-large;
     background-color: white;
     color: #000000;
-    font-weight: bold;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -12,13 +11,18 @@ h1, h2, h3, h4, h5, h6 {
     color: black;
     text-align: center;
 }
+
 h2 {
     margin: .1em;
 }
 
-header {
-    color: #994200;
-    text-align: center;
+main {
+    padding-top: 150px;
+}
+
+hr {
+    border-top: 2px solid #0B8999;
+    width: 80%;
 }
 
 /* Hero */
@@ -43,30 +47,6 @@ header {
     color: black;
 }
 
-/* Hobbies */
-
-#hobbies {
-    border: 5px solid grey;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    background-image: radial-gradient(whitesmoke, #0B8999);
-}
-
-#hobbies {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#hobbies h2 {
-    color: black;
-}
-
-#hobbies ul li {
-    color: #000000;
-    list-style-type: circle;  
-}     
-
 /* Gallery */
 
 #gallery img {
@@ -82,55 +62,31 @@ header {
     text-align: center;
 }
 
-/* video */
+/* Blog */
 
-.videowrapper {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 25px;
-    height: 0px;
-}
-
-.videowrapper iframe {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    height: 100%;
-    width: 100%;
-}
-
-#video {
-    text-align: center;
-    margin-bottom: 25px;
-}
-
-/* Literature */
-
-#lit {
-    border: 5px solid gray;
+#blog {
     margin-top: 5px;
     padding: .2em;
+    background: #2B2D2F;
+}
+#blog h1, #blog p {
+    color: whitesmoke;
 }
 
-#lit h2 {
+#blog h2 {
     text-shadow: 10px 10px 10px black;
 }
 
-#lit div {
+#blog div {
     margin: 0 auto;
-    max-width: 50rem;
-    font-weight: bold;
-    font-variant: small-caps;
-    word-spacing: 5pt;
+    max-width: 100rem;
 }
 
-#lit div p::first-letter{
-     color:whitesmoke;
-     font-size: 75px;
-     text-shadow: -5px 5px 10px black;
+#blog li {
+    color: whitesmoke;
+    list-style: none;
 }
+
 
     /* Contact Form */
 
@@ -144,6 +100,9 @@ header {
     margin: 2rem auto;
     font-size: 15pt;
     background-color: #1D1F20;
+}
+#contact h2 {
+    color: whitesmoke;
 }
 
 fieldset{
@@ -175,9 +134,19 @@ fieldset{
     font-weight: bold;
 }
 
+footer {
+    align-self: center;
+}
+
 /* Tablet Size */
 
 @media screen and (min-width: 60em) {
+    
+    #hero p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
     figure {
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -195,15 +164,9 @@ fieldset{
         max-width: 100%;
         columns: 20rem;
     }
-
-    .videowrapper {
-        padding-bottom: 40%;
-    }
-
-    #video {
-        font-size: 25pt;
-    }
 }
+
+
 
 /* Large screen size */
 
@@ -214,9 +177,9 @@ fieldset{
         grid-template-columns: 1fr 1fr 1fr;
     }
     
-    hr {
+   /* hr {
         display: none;
-    }
+    } */
 
     #gallery h2 {
         grid-column: 1/-1;
@@ -229,10 +192,6 @@ fieldset{
     figcaption {
         margin-right: 1em;
         align-items: flex-end;
-    }
-
-    .videowrapper {
-        padding-bottom: 40%;
     }
 
     /* Contact Form */

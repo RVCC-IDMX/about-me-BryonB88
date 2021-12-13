@@ -23,3 +23,4 @@ Colors
 
 I got insiration for my hover effects from (https://codepen.io/giana)
 with help from (https://www.youtube.com/kepowob)
+as well as (https://www.w3schools.com/)
