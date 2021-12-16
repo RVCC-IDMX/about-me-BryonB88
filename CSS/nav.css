@@ -4,33 +4,25 @@ html {
     scroll-behavior: smooth;
 }
 
-/* 
- get rid of padding & sizing on body so
- header is at top
-*/
+header h1 {
+    font-size: 25px;
+}
 
-body {
+*, *::before, *::after {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
 }
 
-/* add some padding back to rest of page */
-
-main {
-    padding: 2vw;
+.content {
+    display: grid;
+    place-items: center;
 }
 
-/* navbar */
-
-.navbar {
-    background-color: #2B2D2F;
-    color: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    font-size: 15pt;
-    margin-bottom: 1rem;
-    padding: 1rem;
+header {
+    background: #2B2D2F;
+    text-align: center;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
 }
 
 /* logo */
@@ -41,59 +33,148 @@ main {
 }
 
 .logo img {
-    height: 7vw;
-    width: 7vw;
+    height: 5vw;
+    width: 5vw;
 }
 
-.logo h1 {
-    font-size: 1.2em;
+/* Nav Toggle */
+
+.nav-toggle {
+    display: none;
 }
 
-/* navigation list */
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
 
-.navbar-links li {
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display:block;
+    background: white;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+}
+
+.nav-toggle-label span::before {
+    bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+    top: 7px;
+}
+
+/* Nav */
+
+nav {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: #2B2D2F;
+    width: 100%;
+    transform: scale(1, .0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
     list-style: none;
-    display: block;
-    padding: 0.5em 0;
 }
 
-/*  
- style all a tags in header 
- and then on hover
-*/
+nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
 
-.navbar-links a {
+nav a {
     color: whitesmoke;
-    background-color: #2B2D2F;
-    font-size: 1.3rem;
-    padding: .3rem 1.25rem;
-    letter-spacing: 2px;
     text-decoration: none;
-    display: inline-block;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
 }
 
-.navbar-links a:hover,
-.navbar-links a:focus {
-    filter: invert(1);
-    border-radius: 5px;
+nav a:hover {
+    color: black;
 }
 
-/* 
-media query for non-mobile nav bar
-min-width set to width of nav elements 
-such that no text wraps 
-*/
+.nav-toggle:checked ~ nav {
+    transform: scale(1,1);
+}
 
-@media screen and (min-width: 60rem) {
-    
-    .navbar {
-        flex-direction: row;
-        justify-content: space-between;
+.nav-toggle:checked ~ nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+
+@media screen and (min-width: 800px) {
+    .nav-toggle-label {
+        display: none;
     }
 
-    .navbar ul {
+    header {
+        display: grid;
+        grid-template-columns: 1fr auto minmax(600px, 6fr) 1fr;
+    }
+    
+    .logo {
+        grid-column: 2 / 3;
+    }
+
+    nav {
+        all: unset;
+        grid-column: 3/4;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
+        align-items: center;
     }
-    
+
+    nav ul {
+        display: flex;
+    }
+
+    nav li {
+        margin-left: 3m;
+        margin-bottom: 0;
+        font-size: 20px;
+    }
+
+    nav a {
+        opacity: 1;
+        position: relative;
+    }
+
+    nav a::before {
+        content: '';
+        display: block;
+        height: 5px;
+        background: whitesmoke;
+        position: absolute;
+        top: 1.5em;
+        left: 0;
+        right: 0;
+        transform: scale(0, 1);
+        transition: transform ease-in-out 250ms;        
+    }
+
+    nav a:hover::before {
+        transform: scale(1, 1);
+    }
 }
